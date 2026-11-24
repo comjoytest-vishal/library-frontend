@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import BookEntry from "./components/BookEntry";
 import StudentEntry from "./components/StudentEntry";
 import BookRecords from "./components/BookRecords";
+import BookStock from "./components/BookStock";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/book-entry" element={<BookEntry />} />
         <Route path="/student-entry" element={<StudentEntry />} />
         <Route path="/book-records" element={<BookRecords />} />
+        <Route path="/book-stock" element={<BookStock />} />
       </Routes>
     </BrowserRouter>
   );
