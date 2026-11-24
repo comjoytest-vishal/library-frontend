@@ -4,6 +4,7 @@ import BookEntry from "./components/BookEntry";
 import StudentEntry from "./components/StudentEntry";
 import BookRecords from "./components/BookRecords";
 import BookStock from "./components/BookStock";
+import StudentRecords from "./components/StudentRecords";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/student-entry" element={<StudentEntry />} />
         <Route path="/book-records" element={<BookRecords />} />
         <Route path="/book-stock" element={<BookStock />} />
+        <Route path="/student-records" element={<StudentRecords />} />
       </Routes>
     </BrowserRouter>
   );
