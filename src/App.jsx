@@ -5,6 +5,7 @@ import StudentEntry from "./components/StudentEntry";
 import BookRecords from "./components/BookRecords";
 import BookStock from "./components/BookStock";
 import StudentRecords from "./components/StudentRecords";
+import BookDistribution from "./components/BookDistribution";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/book-records" element={<BookRecords />} />
         <Route path="/book-stock" element={<BookStock />} />
         <Route path="/student-records" element={<StudentRecords />} />
+        <Route path="/book-distribution" element={<BookDistribution />} />
       </Routes>
     </BrowserRouter>
   );
