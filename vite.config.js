@@ -7,5 +7,14 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-})
 
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://muhammadiyamission.online/library/backend/public/api',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
+      },
+    },
+  },
+})
