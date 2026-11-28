@@ -12,7 +12,7 @@ import BookDistribution from "./components/BookDistribution";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/library" >
       <Routes>
 
         <Route path="/"  />
